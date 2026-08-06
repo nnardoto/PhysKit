@@ -1,0 +1,5 @@
+/build/
+/tmp/
+/examples/*.pdf
+/tests/*.pdf
+.DS_Store

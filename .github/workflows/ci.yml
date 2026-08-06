@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        typst-version: ["0.14.0", "0.15.0"]
+    steps:
+      - uses: actions/checkout@v6
+      - uses: typst-community/setup-typst@v5
+        with:
+          typst-version: ${{ matrix.typst-version }}
+      - name: Compile package, examples, tests, and manual
+        run: scripts/test-package.sh
