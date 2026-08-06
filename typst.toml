@@ -8,6 +8,7 @@ description = "Draw composable, object-oriented physics diagrams."
 keywords = ["physics", "diagrams", "education", "cetz"]
 categories = ["visualization", "components"]
 disciplines = ["physics", "education"]
+repository = "https://github.com/nnardoto/physkit"
 compiler = "0.14.0"
 exclude = [
   "/.github/",
